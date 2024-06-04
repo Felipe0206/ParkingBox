@@ -1,0 +1,24 @@
+[
+    {
+      "Tipo": "Carro",
+      "Descripcion": "Kia",
+      "Placa": "ABC123",
+      "Entrada": "2024-06-03T08:00:00",
+      "Salida": "2024-06-03T18:30:00"
+    },
+    {
+      "Tipo": "Moto",
+      "Descripcion": "Yamaha",
+      "Placa": "BYI10",
+      "Entrada": "2024-06-03T07:45:00",
+      "Salida": "2024-06-03T17:15:00"
+    },
+    {
+      "Tipo": "Bisicleta",
+      "Descripcion": "GW",
+      "Placa": "GW341",
+      "Entrada": "2024-06-03T09:15:00",
+      "Salida": "2024-06-03T19:00:00"
+    }
+  ]
+  
