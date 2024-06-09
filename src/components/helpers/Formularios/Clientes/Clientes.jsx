@@ -87,7 +87,7 @@ export const Clientes = () => {
               }
 
               if (!valores.nombre) {
-                errores.nombre = 'Por favor ingresa un nombre'
+                errores.nombre = 'Por favor ingresa contraseña'
               } else if (!expresionRegular.nombre.test(valores.nombre)) {
                 errores.nombre = 'El nombre solo puede contener letras y espacios'
               }
@@ -141,7 +141,7 @@ export const Clientes = () => {
                     tipoInput={"text"}
                     inputId={"documento"}
                     inputName="documento"
-                    inputPlaceholder={"10364845"}
+                    inputPlaceholder={"juanperez@gmail.com"}
                     maxlength="10"
                   />
                 <FormInput2
@@ -152,7 +152,7 @@ export const Clientes = () => {
                     tipoInput={"text"}
                     inputId={"nombre"}
                     inputName="nombre"
-                    inputPlaceholder={"Juan Perez"}
+                    inputPlaceholder={"***********"}
                   />
                 <FormInput2
                     classSection={"col-5"}
@@ -162,7 +162,7 @@ export const Clientes = () => {
                     tipoInput={"email"}
                     inputId={"correo"}
                     inputName="correo"
-                    inputPlaceholder={"juanperez@gmail.com"}
+                    inputPlaceholder={"***********"}
                   />
                 
                   <Button clase={'form-button d-flex justify-content-center col-12'}

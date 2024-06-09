@@ -123,7 +123,7 @@ export const TableClientes = ({
             /></button>
           <Buscar
             inputbuscar={"input-buscar fst-italic"}
-            search={"Ingrese documento"}
+            search={"Ingrese consulta"}
             onSubmit={buscarPorId}
             onChange={pulsarBuscar}
           />

@@ -59,22 +59,22 @@ export const Productos = () => {
               let errores = {};
 
               if (!valores.nombreProducto) {
-                errores.nombreProducto = "Por favor ingresa un producto";
+                errores.nombreProducto = "Por favor ingresa el tipo";
               } else if (
                 !expresionRegular.nombre.test(valores.nombreProducto)
               ) {
-                errores.nombreProducto = "El producto debe minimo 3 caracteres";
+                errores.nombreProducto = "El tipo debe ser alfabetico";
               }
 
               if (!valores.precio) {
-                errores.precio = "Por favor ingresa un precio";
+                errores.precio = "Por favor ingresa tarifa";
               } else if (valores.precio < 0) {
                 errores.precio = "El precio debe ser mayor a cero";
               }
               if (!valores.inventario) {
-                errores.inventario = "Por favor ingresa un inventario";
+                errores.inventario = "Por favor ingresa tarifa ";
               } else if (valores.inventario < 0) {
-                errores.inventario = "El inventario debe ser mayor a cero";
+                errores.inventario = "El valor debe ser mayor a cero";
               }
               console.log(valores.descripcion)
               if (!valores.descripcion) {
@@ -111,7 +111,7 @@ export const Productos = () => {
                     tipoInput={"text"}
                     inputId={"nombreProducto"}
                     inputName="nombreProducto"
-                    inputPlaceholder={"Casco"}
+                    inputPlaceholder={"Carro"}
                   />
                   <FormInput2
                     classSection={"col-4"}
@@ -121,7 +121,7 @@ export const Productos = () => {
                     tipoInput={"number"}
                     inputId={"precio"}
                     inputName="precio"
-                    inputPlaceholder={"50000"}
+                    inputPlaceholder={"3000"}
                   />
                   <FormInput2
                     classSection={"col-3"}
@@ -131,7 +131,7 @@ export const Productos = () => {
                     tipoInput={"number"}
                     inputId={"inventario"}
                     inputName="inventario"
-                    inputPlaceholder={"50"}
+                    inputPlaceholder={"20000"}
                   />
 
                   <FormInput2
@@ -142,7 +142,7 @@ export const Productos = () => {
                     tipoInput={"number"}
                     inputId={"inventario"}
                     inputName="inventario"
-                    inputPlaceholder={"50"}
+                    inputPlaceholder={"300000"}
                   />
                  {/* 
                   <section className={"textarea col-12"}>
