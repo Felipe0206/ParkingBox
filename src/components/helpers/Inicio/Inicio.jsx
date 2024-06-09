@@ -11,14 +11,35 @@ export const Inicio = () => {
     <section className="header d-flex flex-column">
       <section className="encabezado d-flex flex-column justify-content-center align-items-center ">
        
-        <section className="titulo-inicio"><h1>BIENVENIDO A PARKINGBOX</h1></section>
+        <section className="titulo-inicio"><h2>BIENVENIDO Javier A PARKINGBOX</h2></section>
         
       </section>
       <section className="time" style={{ marginBottom: '5%' }}>
       <h1> {moment().format('MMMM Do YYYY, h:mm a')}</h1>
-  
 
-      <form>
+      <div class="container mt-5">
+    <form action="">
+        <div class="form-group">
+            <label for="vehicleSelect" class="font-weight-bold">Selecciona un tipo de vehículo</label>
+            <select class="form-control" id="vehicleSelect">
+                <option value="carro">Carro</option>
+                <option value="motos">Motos</option>
+                <option value="bicicletas">Bicicletas</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="numBahias" class="font-weight-bold">Número de Bahías</label>
+            <input type="text" class="form-control" id="numBahias" placeholder="Ingrese el número de bahías"></input>
+        </div>
+    </form>
+</div>
+
+      <div class="container mt-5">
+    <p class="h3 font-weight-bold text-primary">La dirección de PARKINGBOX es:</p>
+    <p class="h3 font-weight-bold text-secondary">El número de Bahías de PARKINGBOX es:</p>
+</div>
+
+     <form>
   <div class="mb-3">
     <label for="correo" class="form-label">Correo:</label>
     <input type="email" class="form-control" id="correo" aria-describedby="emailHelp"></input>

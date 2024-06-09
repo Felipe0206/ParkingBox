@@ -113,9 +113,19 @@ export const Productos = () => {
                     inputName="nombreProducto"
                     inputPlaceholder={"Carro"}
                   />
+                   <FormInput2
+                    classSection={"col-5"}
+                    title={"Perdida Ticket:"}
+                    error={errors.nombreProducto}
+                    touched={touched.nombreProducto}
+                    tipoInput={"text"}
+                    inputId={"nombreProducto"}
+                    inputName="nombreProducto"
+                    inputPlaceholder={"Carro"}
+                  />
                   <FormInput2
                     classSection={"col-4"}
-                    title={"Tarifa Hora:"}
+                    title={"Tarifa Minutos:"}
                     error={errors.precio}
                     touched={touched.precio}
                     tipoInput={"number"}
@@ -182,7 +192,7 @@ export const Productos = () => {
         </section>
         <TableProductos
           textoColumna1={"Tipo"}
-          textoColumna2={"Tarifa Hora"}
+          textoColumna2={"Tarifa Minutos"}
           textoColumna3={"Tarifa Plena"}
           textoColumna4={"Tarifa Mensual"}
           textoColumna5={"Editar"}

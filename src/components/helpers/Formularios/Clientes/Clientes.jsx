@@ -87,7 +87,7 @@ export const Clientes = () => {
               }
 
               if (!valores.nombre) {
-                errores.nombre = 'Por favor ingresa contraseña'
+                errores.nombre = 'Por favor ingresa un nombre'
               } else if (!expresionRegular.nombre.test(valores.nombre)) {
                 errores.nombre = 'El nombre solo puede contener letras y espacios'
               }
@@ -141,7 +141,29 @@ export const Clientes = () => {
                     tipoInput={"text"}
                     inputId={"documento"}
                     inputName="documento"
-                    inputPlaceholder={"juanperez@gmail.com"}
+                    inputPlaceholder={"10364845"}
+                    maxlength="10"
+                  />
+                  <FormInput2
+                    classSection={"col-3"}
+                    title={"Nombre:"}
+                    error={errors.documento}
+                    touched={touched.documento}
+                    tipoInput={"text"}
+                    inputId={"documento"}
+                    inputName="documento"
+                    inputPlaceholder={"10364845"}
+                    maxlength="10"
+                  />
+                  <FormInput2
+                    classSection={"col-3"}
+                    title={"Apellido:"}
+                    error={errors.documento}
+                    touched={touched.documento}
+                    tipoInput={"text"}
+                    inputId={"documento"}
+                    inputName="documento"
+                    inputPlaceholder={"10364845"}
                     maxlength="10"
                   />
                 <FormInput2
@@ -152,7 +174,7 @@ export const Clientes = () => {
                     tipoInput={"text"}
                     inputId={"nombre"}
                     inputName="nombre"
-                    inputPlaceholder={"***********"}
+                    inputPlaceholder={"Juan Perez"}
                   />
                 <FormInput2
                     classSection={"col-5"}
@@ -162,7 +184,7 @@ export const Clientes = () => {
                     tipoInput={"email"}
                     inputId={"correo"}
                     inputName="correo"
-                    inputPlaceholder={"***********"}
+                    inputPlaceholder={"juanperez@gmail.com"}
                   />
                 
                   <Button clase={'form-button d-flex justify-content-center col-12'}
@@ -175,7 +197,7 @@ export const Clientes = () => {
         </section>
         <TableClientes
           textoColumna1={"correo"}
-          textoColumna2={"Permisos"}
+          textoColumna2={"Rol"}
           textoColumna3={"Editar"}
           textoColumna4={"Eliminar"}
           
