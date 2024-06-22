@@ -1,21 +1,11 @@
 import mysql.connector
 
-
-    
+# Establecer la conexión con el servidor MySQL
 connection = mysql.connector.connect(
-    host="127.0.0.1",
+    host="localhost",  # Solo la dirección del host
+    port=3306,  # El puerto se especifica por separado
     user="root",
-    password="",
-    database="parkingbox"
+    password="Andres.0206",  # Asegúrate de que esta contraseña sea correcta
+    database="parqueadero"
 )
-
-conexion= connection.cursor() 
-
-conexion.execute("show table")
-
-resultado=conexion.fetchall()
-
-for fila in resultado:
-    print(fila)
-resultado.close()
 
