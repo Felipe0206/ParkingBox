@@ -11,7 +11,7 @@ import { Button } from "../Button";
 import { Mensaje } from "../Mensaje";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 
-export const Editaringreso = () => {
+export const EditarIngreso = () => {
     /* let documento, nombre, correo, direccion, celular; */
     const [idCliente, setIdCliente] = useState('');
     const [placaMoto, setPlacaMoto] = useState('');
